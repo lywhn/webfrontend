@@ -1,20 +1,20 @@
-Windows������Git
-1����git��������windows�汾��git��http://git-scm.com/downloads
+﻿Windows下配置Git
+1、从git官网下载windows版本的git：http://git-scm.com/downloads
 
-2��һ��ʹ��Ĭ�����ü��ɣ�һ·next��git��װ��ϣ�
+2、一般使用默认设置即可：一路next，git安装完毕！
 
-3�����������ʱ���windows��cmd���������git�������ʾ�������ڲ����ⲿ���Ҳ���ǿ����еĳ��򡱣���Ҫֱ����windows��cmd��ʹ��git����Ҫ�����������
+3、但是如果这时你打开windows的cmd，在里面打git命令会提示“不是内部或外部命令，也不是可运行的程序”，想要直接在windows的cmd里使用git命令要多加如下两步
 
-3.1���ҵ�git��װ·����bin��λ�ã��磺D:\Program Files\Git\bin
+3.1、找到git安装路径中bin的位置，如：D:\Program Files\Git\bin
 
-        �ҵ�git��װ·����git-core��λ�ã��磺D:\Program Files\Git\libexec\git-core;
+        找到git安装路径中git-core的位置，如：D:\Program Files\Git\libexec\git-core;
 
-        ע��"D:\Program Files\Git\"�ǰ�װ·������������İ�װ·����һ����Ҫ�������Լ���·���滻"D:\Program Files\Git\"
+        注："D:\Program Files\Git\"是安装路径，可能与你的安装路径不一样，要按照你自己的路径替换"D:\Program Files\Git\"
 
-3.2���Ҽ����������->�����ԡ�->���߼�ϵͳ���á�->������������->���·��ġ�ϵͳ���������ҵ���path��->ѡ�С�path����ѡ�񡰱༭��->��3.1���ҵ���bin��git-core·�����Ƶ�����->���沢�˳�
+3.2、右键“计算机”->“属性”->“高级系统设置”->“环境变量”->在下方的“系统变量”中找到“path”->选中“path”并选择“编辑”->将3.1种找到的bin和git-core路径复制到其中->保存并退出
 
-        ע����path���У�ÿ��·��֮��Ҫ��Ӣ������״̬�µķֺš�����;����Ϊ���
+        注：“path”中，每个路径之间要以英文输入状态下的分号——“;”作为间隔
 
 
 
-���ھͿ�����cmd�ﾡ���ʹ��git��~
+现在就可以在cmd里尽情的使用git了~
